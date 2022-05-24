@@ -1,6 +1,9 @@
 const Home = function (){
     return (
-        <h1>Home Page</h1>
+        <>
+        <h1>This is the Home Page</h1>
+        <h2>I hope you like stocks!</h2>
+        </>
     )
 }
 
