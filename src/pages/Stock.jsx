@@ -14,8 +14,12 @@ const Stock = function (props){
     
     return (
         <div>
-           <h1>{stocks[idx].name}</h1>
-           <h2>{stocks[idx].lastPrice}</h2>
+           <h1>{stocks[idx].name}({stocks[idx].symbol})</h1>
+           <h2>Last Price: {stocks[idx].lastPrice.toFixed(2)}</h2>
+           <h2>Change: {stocks[idx].change.toFixed(2)}</h2>
+           <h2>Open: {stocks[idx].open.toFixed(2)}</h2>
+           <h2>High: {stocks[idx].high.toFixed(2)}</h2>
+           <h2>Low: {stocks[idx].low.toFixed(2)}</h2>
         </div>
     )
 }
