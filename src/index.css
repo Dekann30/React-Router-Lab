@@ -26,3 +26,23 @@ code {
   color: black;
   text-decoration: none;
 }
+
+table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  text-decoration: overline underline;
+}
+
+th {
+  padding-right: 70px
+}
+
+th a {
+  color: black;
+  text-decoration: none;
+}
