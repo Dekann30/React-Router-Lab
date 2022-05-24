@@ -5,23 +5,23 @@ const Dashboard = function (props){
     return (
          <table>
             <tr className='title'>
-                <th>Company Name(Symbol)</th>
-                <th>Price</th>
-                <th>Change</th>
+                <th><h2>Company Name(Symbol)</h2></th>
+                <th><h2>Price</h2></th>
+                <th><h2>Change</h2></th>
              </tr>
              <tr>
                  <th>{stocks.map((stocks, idx) => {
                 return(
                 <Link key={idx} to={`/stocks/${stocks.symbol}`}>
-                    <h5>{stocks.name}({stocks.symbol})</h5>
+                    <h3>{stocks.name}({stocks.symbol})</h3>
                 </Link> )})}</th>
                 <th>{stocks.map((stocks, idx) => {
                 return(
-                    <h5>{stocks.lastPrice}</h5>)})}
+                    <h3>{stocks.lastPrice}</h3>)})}
                 </th>
                 <th>{stocks.map((stocks, idx) => {
                 return(
-                    <h5>{stocks.change.toFixed(2)}</h5>)})}</th>
+                    <h3>{stocks.change.toFixed(2)}</h3>)})}</th>
              </tr>
             
         </table>
